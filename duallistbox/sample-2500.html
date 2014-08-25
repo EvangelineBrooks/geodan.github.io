@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Dual list box 2500 preview</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+    <style type="text/css">
+        html { position: relative; min-height: 100%; }
+        body { margin-bottom: 60px; }
+        .footer { position: absolute; bottom: 0; width: 100%; min-height: 60px; height: 90px; }
+        .footer img { margin-top: 20px; }
+        .footer p { margin-top: 40px; }
+        .container { width: auto; max-width: 800px; padding: 0 15px; }
+        .container .text-muted { margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="dual-list-box" class="form-group row">
+            <select multiple="multiple" data-title="employees" data-source="sample/sample-2500.json"
+                    data-value="index" data-text="name"></select>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <a href="http://www.geodan.nl">
+                <img src="http://www.geodan.nl/wp-content/themes/geodan/img/logo.png" alt="Geodan logo" title="Geodan" />
+            </a>
+            <p class="pull-right"><a href="index.html">Demo of the jQuery / Bootstrap Dual List Box</a></p>
+        </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="http://rawgit.com/Geodan/DualListBox/master/dist/dual-list-box.min.js"></script>
+
+    <script type="text/javascript">
+        $('select').DualListBox();
+    </script>
+</body>
+</html>
